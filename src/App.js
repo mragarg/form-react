@@ -5,6 +5,19 @@ import React from 'react';
 function App() {
   return (
     <div className="App">
+
+      <form>
+        <div className="form-group">
+          <input 
+            type="text" 
+            className="form-control" 
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp" 
+            placeholder="Type some stuff" />
+        </div>
+      </form>
+
+
     </div>
   );
 }
