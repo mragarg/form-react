@@ -2,21 +2,14 @@ import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
 
+import Input from './Input';
+import Output from './Output';
+
 function App() {
   return (
     <div className="App">
-
-      <form>
-        <div className="form-group">
-          <input 
-            type="text" 
-            className="form-control" 
-            id="exampleInputEmail1" 
-            aria-describedby="emailHelp" 
-            placeholder="Type some stuff" />
-        </div>
-      </form>
-
+      <Input />
+      <Output text="test" />
 
     </div>
   );
