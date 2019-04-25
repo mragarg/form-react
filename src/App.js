@@ -5,14 +5,36 @@ import React from 'react';
 import Input from './Input';
 import Output from './Output';
 
-function App() {
-  return (
-    <div className="App">
-      <Input />
-      <Output text="test" />
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputText: ''
+    }
+  }
 
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <Input 
+          handleChange={this._setInputText}
+        />
+        <Output 
+          text={this.state.inputText} 
+        />
+  
+      </div>
+    );
+  }
+
+  _setInputText = (inputText) => {
+    this.setState({
+      inputText
+    })
+  }
+
 }
+
+
 
 export default App;
